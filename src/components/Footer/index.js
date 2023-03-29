@@ -6,9 +6,9 @@ import {
     MDBRow,
 } from 'mdb-react-ui-kit';
 
-const LNYfooter = () => {
+const SiteFooter = () => {
     return (
-        <MDBFooter className="footerLNY text-white">
+        <MDBFooter className="siteFooter">
             < MDBContainer fluid className="footerContainer">
                 <MDBRow>
                     <MDBCol>
@@ -20,4 +20,4 @@ const LNYfooter = () => {
     );
 }
 
-export default LNYfooter;
+export default SiteFooter;

@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 
-function BasicExample() {
+function SiteNavbar() {
     return (
         <Navbar bg="light" expand="lg">
             navbar
@@ -8,4 +8,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default SiteNavbar;

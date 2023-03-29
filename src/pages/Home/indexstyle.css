@@ -1,0 +1,10 @@
+.profileContainer {
+    display: flex;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.profilePic {
+    height: 300px;
+}

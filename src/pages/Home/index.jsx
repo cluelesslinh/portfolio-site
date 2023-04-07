@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
+import { Parallax, Background } from 'react-parallax';
 import "./indexstyle.css";
 
 const Home = () => {
@@ -8,49 +9,74 @@ const Home = () => {
 
         <div>
 
-            <section id="aboutMe">
-                <div className="profileContainer">
-                    <div className="profilePic">
-                        <img className="profilePic" src={process.env.PUBLIC_URL + "/images/linh-pham.png"} alt="profilepic" />
+            <MDBRow className="profileRow">
+                <MDBCol className="profileContainer">
+                    <div className="profilePic col-md-4 col-sm-12">
+                        <img className="profilePic img-fluid" src={process.env.PUBLIC_URL + "/images/linh-pham.png"} alt="profilepic" />
                     </div>
-                    <div className="profileDesc">
+                    <div className="descProfile col-md-6 col-sm-12">
                         Hello! My name is Linh. I am a front-end web developer. I'm learning how to bring
                         concepts to life using HTML, JaveScript, and CSS. I hope to optimize the user's
                         experience by implementing a pleasant user interface that is visually appealing and
                         simple to use. I am eager to learn and try new things to become a better developer.
                     </div>
-                </div>
-            </section>
+                </MDBCol>
+            </MDBRow >
 
-            <section id="projects">
-                <MDBRow className="projectsRow">
+            <MDBRow className="projectsRow">
 
-                    <MDBCol className="projectsTitle col-12">PROJECTS</MDBCol>
+                <MDBCol className="col-12">
+                    <Parallax className="projectsTitle" strength={450}>
+                        <Background>
+                            <img className="projectBG" src={process.env.PUBLIC_URL + "/images/projectsbg.jpg"} alt="projectsBG" />
+                        </Background>
+                        <div className="projectTitleBox">
+                            <div className="projectTitle">PROJECTS</div>
+                        </div>
+                    </Parallax>
+                </MDBCol>
 
-                    <MDBCol className="businessWebsite col-lg-6">
-                        <div className="titleLNY">LNY OPTOMETRY</div>
-                        <div className="descLNY">
+                <MDBRow className="projectOutline col-12">
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <div className="titleProject">LNY OPTOMETRY</div>
+                        <div className="descProject">
                             Business website built with REACT. Techs: JavaScript, CSS, Bootstrap mdb-react-ui-kit,
                             Parallax, Gallery, and Google Map. Users can navigate through different pages of the
                             site with the navbar menu whilte viewing additional info in the footer. I learned how
                             to implement a contact form with emailing function using emailjs as well as creating a
                             picture gallery for showcasing.
                         </div>
+                        <div className="linkProject">
+                            <div><a href="https://lnyoptometry.vercel.app/" target="_blank" rel="noopener noreferrer">Launch Website</a></div>
+                            <div><a href="https://github.com/cluelesslinh/lnyoptometry" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
+                        </div>
                     </MDBCol>
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/LNYimage.png"} alt="LNYimage" />
+                    </MDBCol>
+                </MDBRow>
 
-                    <MDBCol className="pokeDex col-lg-6">
-                        <div className="titlePokedex">Pokedex</div>
-                        <div className="descPokedex">
+                <MDBRow className="projectOutline col-12">
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <div className="titleProject">POKEDEX</div>
+                        <div className="descProject">
                             Pokedex is an app that lets the user see details about a Pokemon. Techs: DOM interaction,
                             pokeAPI, Ajax, JS, jQuery, and Debugging with ESlint. App is used to search for a Pokemon
                             through asynchronous operation via fetch and promises to retrieve data from an external API.
                             I learned about page styling with React-Bootstrap and designing with CSS FlexBox.
                         </div>
+                        <div><a href="https://cluelesslinh.github.io/pokedex-js/" target="_blank" rel="noopener noreferrer">Launch Web App</a></div>
+                        <div><a href="https://github.com/cluelesslinh/pokedex-js" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
                     </MDBCol>
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/pokedeximage.png"} alt="pokedexImage" />
+                    </MDBCol>
+                </MDBRow>
 
-                    <MDBCol className="meetApp col-lg-6">
-                        <div className="titleMeet">Meet</div>
-                        <div className="descMeet">
+                <MDBRow className="projectOutline col-12">
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <div className="titleProject">MEET</div>
+                        <div className="descProject">
                             A serverless progressive web app (PWA) with React using a test driven development (TDD)
                             technique. App uses the Google Calendar API to fetch upcoming events. Techs: OAuth2
                             authentication flow, AWS Lambda, Jest, Puppeteer, and Atatus. I learned about Unit
@@ -58,22 +84,35 @@ const Home = () => {
                             Scenarios while building this app. I also learned how to implement a chart to show data
                             called from the API.
                         </div>
+                        <div className="linkProject">
+                            <div><a href="https://cluelesslinh.github.io/meet/" target="_blank" rel="noopener noreferrer">Launch Web App</a></div>
+                            <div><a href="https://github.com/cluelesslinh/meet" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
+                        </div>
                     </MDBCol>
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/meetimage.png"} alt="meetImage" />
+                    </MDBCol>
+                </MDBRow>
 
-                    <MDBCol className="chatApp col-lg-6">
-                        <div className="titleChat">Chat</div>
-                        <div className="descChat">
+                <MDBRow className="projectOutline col-12">
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <div className="titleProject">CHAT</div>
+                        <div className="descProject">
                             A chatting app for both Android and IOS devices developed using React Native. The app will
                             provide users with a chat interface and optoins to share images and their location. Techs:
                             Expo, Google Firestore DB and Aunthentication, Firebase Cloud Storage, and Gifted Chat. I
                             learned how to use an Anrioid/IOS emulator in order to test the app's functions.
                         </div>
+                        <div className="linkProject"><a href="https://github.com/cluelesslinh/hello-world-chat" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
                     </MDBCol>
-
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/chatimage.png"} alt="chatImage" />
+                    </MDBCol>
                 </MDBRow>
-            </section>
 
-        </div>
+            </MDBRow>
+
+        </div >
 
     );
 };

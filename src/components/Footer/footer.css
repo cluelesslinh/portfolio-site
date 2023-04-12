@@ -1,0 +1,18 @@
+.footerContainer {
+    display: flex;
+    align-items: center;
+    margin: 2em 1.5em 2em 0;
+}
+
+.footerImage {
+    height: 60px;
+    width: 60px;
+}
+
+.footerGithub {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
+@media screen and (max-width: 768px) {}

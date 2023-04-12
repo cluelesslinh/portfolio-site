@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBRow, MDBCol, } from 'mdb-react-ui-kit';
 import { Parallax, Background } from 'react-parallax';
+import Button from 'react-bootstrap/Button';
 import "./indexstyle.css";
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
             <MDBRow className="projectsRow">
 
                 <MDBCol className="col-12">
-                    <Parallax className="projectsTitle" strength={450}>
+                    <Parallax className="parallaxProject" strength={450}>
                         <Background>
                             <img className="projectBG" src={process.env.PUBLIC_URL + "/images/projectsbg.jpg"} alt="projectsBG" />
                         </Background>
@@ -108,6 +109,27 @@ const Home = () => {
                     <MDBCol className="col-lg-6 col-md-6 col-12">
                         <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/chatimage.png"} alt="chatImage" />
                     </MDBCol>
+                </MDBRow>
+
+                <MDBRow className="contactRow">
+                    <MDBCol className="col-12">
+                        <Parallax className="parallaxBox parallaxContact" strength={450}>
+                            <Background>
+                                <img className="contactBG" src={process.env.PUBLIC_URL + "/images/contactBG.png"} alt="contactBG" />
+                            </Background>
+                            <div className="contactTitleBox">
+                                <div className="contactTitle">CONTACT</div>
+                            </div>
+                        </Parallax>
+                    </MDBCol>
+                </MDBRow>
+
+                <MDBRow className="contactRow">
+                    <MDBCol className="col-12 descGIT">Get In Touch</MDBCol>
+                    <MDBCol className="col-12 descContact">Looking forward to new opportunities. I will try my best to get back to you as soon as possible.</MDBCol>
+                    <MDBCol className="col-12"><a href="mailto:dennisbpham@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <Button className="buttonEmail"> Send Email </Button>
+                    </a></MDBCol>
                 </MDBRow>
 
             </MDBRow>

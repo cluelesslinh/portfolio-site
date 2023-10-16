@@ -52,8 +52,29 @@ const Home = () => {
                             <div><a href="https://github.com/cluelesslinh/lnyoptometry" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
                         </div>
                     </MDBCol>
+
                     <MDBCol className="col-lg-6 col-md-6 col-12">
                         <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/LNYimage.png"} alt="LNYimage" />
+                    </MDBCol>
+                </MDBRow>
+
+                <MDBRow className="projectOutline col-12">
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <div className="titleProject">LINHFLIX</div>
+                        <div className="descProject">
+                            Sample movie database website created with React calling info from backend api using mongodb.
+                            Users can register a new account to login. After registering, users can add movies to their
+                            favorites list and update their info or delete their account. Techs: Express, MongoDB, Mongoose,
+                            OAUTH, Cors, Bootstrap. I learned how to implement a movie card.
+                        </div>
+                        <div className="linkProject">
+                            <div><a href="https://linhflixdb.netlify.app/" target="_blank" rel="noopener noreferrer">Launch Website</a></div>
+                            <div><a href="https://github.com/cluelesslinh/LinhFlix-client" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
+                        </div>
+                    </MDBCol>
+
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/linhfliximage.png"} alt="LNYimage" />
                     </MDBCol>
                 </MDBRow>
 

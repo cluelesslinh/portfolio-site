@@ -1,9 +1,10 @@
 import Navbar from 'react-bootstrap/Navbar';
+import './navbar.css';
 
 function SiteNavbar() {
     return (
         <Navbar>
-            Dennis Linh Pham Portfolio
+            <div className="navbarTitle">Dennis Linh Pham Portfolio</div>
         </Navbar>
     );
 }

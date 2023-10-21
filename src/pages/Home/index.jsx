@@ -17,7 +17,7 @@ const Home = () => {
                     </div>
                     <div className="descProfile col-md-6 col-sm-12">
                         Hello! My name is Linh. I am a front-end web developer. I'm learning how to bring
-                        concepts to life using HTML, JaveScript, and CSS. I hope to optimize the user's
+                        concepts to life using HTML, JavaScript, and CSS. I hope to optimize the user's
                         experience by implementing a pleasant user interface that is visually appealing and
                         simple to use. I am eager to learn and try new things to become a better developer.
                     </div>

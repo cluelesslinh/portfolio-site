@@ -53,7 +53,7 @@ const Home = () => {
                         </div>
                     </MDBCol>
                     <MDBCol className="col-lg-6 col-md-6 col-12">
-                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/msnsurfaces.png"} alt="LNYimage" />
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/LNYimage.png"} alt="LNYimage" />
                     </MDBCol>
                 </MDBRow>
 

@@ -52,6 +52,9 @@ const Home = () => {
                             <div><a href="https://github.com/cluelesslinh/lnyoptometry" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
                         </div>
                     </MDBCol>
+                    <MDBCol className="col-lg-6 col-md-6 col-12">
+                        <img className="imageProject img-fluid" src={process.env.PUBLIC_URL + "/images/msnsurfaces.png"} alt="LNYimage" />
+                    </MDBCol>
                 </MDBRow>
 
                 <MDBRow className="projectOutline col-12">

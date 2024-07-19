@@ -52,7 +52,9 @@ const Home = () => {
                             <div><a href="https://github.com/cluelesslinh/lnyoptometry" target="_blank" rel="noopener noreferrer">See on GitHub</a></div>
                         </div>
                     </MDBCol>
+                </MDBRow>
 
+                <MDBRow className="projectOutline col-12">
                     <MDBCol className="col-lg-6 col-md-6 col-12">
                         <div className="titleProject">MSN SURFACES</div>
                         <div className="descProject">
